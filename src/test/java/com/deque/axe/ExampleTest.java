@@ -23,7 +23,7 @@ import org.junit.Test;
 import org.junit.rules.TestName;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.net.URL;
 
@@ -40,7 +40,7 @@ public class ExampleTest {
 	 */
 	@Before
 	public void setUp() {
-		driver = new FirefoxDriver();
+		driver = new ChromeDriver();
 
 		driver.get("http://localhost:5005");
 	}
