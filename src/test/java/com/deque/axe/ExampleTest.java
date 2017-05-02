@@ -41,11 +41,7 @@ public class ExampleTest {
 	@Before
 	public void setUp() {
 		driver = new ChromeDriver();
-		if(System.getProperty("axe.url") != null) {
-            driver.get(System.getProperty("axe.url"));
-        } else {
-			driver.get("http://localhost:5005");
-		}
+		driver.get(System.getProperty("axe.url", "http://localhost:5005"));
 	}
 
 	/**
