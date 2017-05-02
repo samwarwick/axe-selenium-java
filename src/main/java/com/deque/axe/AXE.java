@@ -129,6 +129,12 @@ public class AXE {
 				sb.append(": ")
 						.append(helpUrl);
 			}
+			
+			JSONArray tags = violation.getJSONArray("tags");
+			sb.append(lineSeparator).append("  tags:");
+			for (int t = 0; t < tags.length(); t++) {
+				sb.append(" ").append(tags.getString(t));
+			}
 
 			JSONArray nodes = violation.getJSONArray("nodes");
 
