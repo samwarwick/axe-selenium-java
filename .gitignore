@@ -2,3 +2,8 @@
 target
 *.iml
 *.json
+
+# Eclipse
+.classpath
+.project
+.settings/
